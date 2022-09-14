@@ -1,6 +1,18 @@
 version: '3.8'
 
 services:
+  database:
+    image: postgres
+    container_name: database
+    env_file: ./docker/postgres/.env
+    volumes:
+      - ./docker/postgres/data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
   php-apache:
     container_name: php-apache
     build:

@@ -1,3 +1,5 @@
 config/local.neon
 .idea
 vendor
+docker/postgres/.env
+docker/postgres/data
