@@ -8,7 +8,6 @@ use App\ApiEvaluator\RecipeJsonRPCEvaluator;
 use Datto\JsonRpc\Server;
 use Nette;
 use Nette\Application\Responses\VoidResponse;
-use Tracy\Debugger;
 
 
 final class HomepagePresenter extends Nette\Application\UI\Presenter
@@ -23,7 +22,6 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
     {
         $server = new Server($this->evaluator);
         try {
-            Debugger::log($this->getHttpRequest()->getRawBody());
             $request_array = Nette\Utils\Json::decode($this->getHttpRequest()->getRawBody(), JSON_OBJECT_AS_ARRAY);
             $reply = $server->rawReply($request_array);
 
