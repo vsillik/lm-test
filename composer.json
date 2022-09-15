@@ -15,7 +15,7 @@
 		"nette/utils": "^3.2",
 		"latte/latte": "^2.9",
 		"tracy/tracy": "^2.8",
-		"contributte/jsonrpc": "^6.0"
+		"datto/json-rpc": "^6.1"
 	},
 	"require-dev": {
 		"nette/tester": "^2.3",

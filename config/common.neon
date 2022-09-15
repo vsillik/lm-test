@@ -15,13 +15,3 @@ di:
 	export:
 		parameters: no
 		tags: no
-
-extensions:
-	jsonRPCExtension: Contributte\JsonRPC\DI\JsonRPCExtension
-
-jsonRPCExtension:
-	methodsMapping:
-		recipe.create: App\Command\Type\Recipe\CreateCommand
-		recipe.get: App\Command\Type\Recipe\GetCommand
-		recipe.getAll: App\Command\Type\Recipe\GetAllCommand
-		recipe.delete: App\Command\Type\Recipe\DeleteCommand
