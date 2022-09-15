@@ -4,7 +4,6 @@ namespace App\Model;
 
 use App\Utils\UUIDValidator;
 use Nette;
-use Tracy\Debugger;
 
 final class RecipeFacade
 {
